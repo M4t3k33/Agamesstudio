@@ -508,3 +508,126 @@ footer {
         justify-content: center;
     }
 }
+/* Base styles for all devices */
+:root {
+    --mobile-padding: 20px;
+    --desktop-padding: 5%;
+}
+
+/* Mobile First Approach (base styles) */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 1rem var(--mobile-padding);
+    }
+
+    nav ul {
+        display: none; /* Hide regular menu */
+    }
+
+    /* Mobile Menu Button */
+    .mobile-menu-btn {
+        display: block;
+        font-size: 1.5rem;
+        color: var(--accent);
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Mobile Menu */
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: var(--navy);
+        padding: 2rem;
+        transition: var(--transition);
+    }
+
+    .mobile-nav.active {
+        right: 0;
+    }
+
+    .mobile-nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* Header adjustments */
+    header {
+        padding: 0 var(--mobile-padding);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Games section */
+    .games-grid {
+        grid-template-columns: 1fr;
+        padding: 0 var(--mobile-padding);
+    }
+
+    /* About section */
+    .about-content {
+        grid-template-columns: 1fr;
+        padding: 0 var(--mobile-padding);
+    }
+
+    /* Contact section */
+    .contact-container {
+        grid-template-columns: 1fr;
+        padding: 0 var(--mobile-padding);
+    }
+}
+
+/* Tablet styles */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1025px) {
+    nav {
+        padding: 1rem var(--desktop-padding);
+    }
+
+    .mobile-menu-btn {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    .games-grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 var(--desktop-padding);
+    }
+
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 var(--desktop-padding);
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 var(--desktop-padding);
+    }
+}
+
+/* Shared responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
