@@ -33,3 +33,16 @@ function scrollToGames() {
         behavior: 'smooth'
     });
 }
+const mobileBtn = document.querySelector('.mobile-menu-btn');
+const mobileNav = document.querySelector('.mobile-nav');
+
+mobileBtn.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+});
+
+// Close mobile menu when clicking a link
+document.querySelectorAll('.mobile-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileNav.classList.remove('active');
+    });
+});
