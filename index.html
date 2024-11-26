@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Studio</title>
+    <title>AGames Studio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/team.png">
 
 </head>
 <body>
+    <div id="cookie-notice">
+        <p>Ta strona używa plików cookie, aby zapewnić najlepszą jakość korzystania z naszej witryny. <a href="politykaprywatnosci.html">Polityka prywatności</a></p>
+        <button onclick="acceptCookies()">Akceptuję</button>
+    </div>
+    
     <nav>
-        <div class="logo">GameStudio</div>
+        <div class="logo">AGames Studio</div>
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#"></a></li>
             <li><a href="#games">Nasze Gry</a></li>
             <li><a href="#about">O nas</a></li>
             <li><a href="#contact">Kontakt</a></li>
@@ -24,9 +30,8 @@
         <p>Innowacyjne studio tworzące niezapomniane przygody</p>
         <button class="cta-button" onclick="scrollToGames()">Zobacz nasze gry!</button>
     </header>
-
     <section id="games">
-        <h2>Our Games</h2>
+        <h2>ㅤㅤㅤNasze gry</h2>
         <div class="games-grid">
             <a href="https://arturs-games.itch.io/the-colony" class="game-card">
                 <div class="game-icons">
@@ -36,7 +41,7 @@
                 <img src="assets/thecolony.png" alt="The Colony">
                 <h3>The Colony</h3>
                 <p>Gra pozwala ci stworzyć własną kolonię, prowadząc jeden z wielkich kolonialnych imperiów, takich jak Wielka Brytania czy Hiszpania. Musisz budować gospodarkę, walczyć z innymi mocarstwami i bronić się przed najazdami tubylców, jednocześnie starając się przyswoić ich kulturę. Twoje decyzje mają kluczowe znaczenie dla sukcesu twojej kolonii, a jej przyszłość zależy od twoich umiejętności i strategii.</p>
-                <span class="read-more">Learn More →</span>
+                <span class="read-more">Zdobądź!→</span>
             </a>
             <a href="https://arturs-games.itch.io/rock-paper-scissors-deluxe-v001-lite" class="game-card">
                 <div class="game-icons">
@@ -49,31 +54,20 @@
                     Wyrusz w podróż przez fantastyczny świat pełen przygód, rywalizuj z bossami w trybie "Duo" i zdobywaj epickie nagrody. Od zwykłego papieru, kamienia, nożyc do magicznych kart, które urozmaicą twoją rozgrywkę - czeka na ciebie wiele niespodzianek!
                     
                     Podczas gry w "Rock Paper Scissors DELUXE" znajdziesz: przyjemną grafikę, wciągającą rozgrywkę i ekscytującą fabułę.</p>
-                <span class="read-more">Learn More →</span>
-            </a>
-            <a href="/games/dark-quest" class="game-card">
-                <div class="game-icons">
-                    <i class="fab fa-steam"></i>
-                    <i class="fab fa-playstation"></i>
-                    <i class="fab fa-nintendo-switch"></i>
-                </div>
-                <img src="game3.jpg" alt="Dark Quest">
-                <h3>Dark Quest</h3>
-                <p>Epic RPG adventure in a dark fantasy world</p>
-                <span class="read-more">Learn More →</span>
+                <span class="read-more">Zdobądź!→</span>
             </a>
         </div>
     </section>
     <section id="about" class="section">
-        <h2>About Us</h2>
+        <h2>O nas</h2>
         <div class="about-content">
             <div class="about-text">
-                <h3>Passionate Game Creators</h3>
+                <h3>Programiści z ogromną pasją do tworzenia gier!</h3>
                 <p>Founded in 2020, our studio brings together talented developers, artists, and storytellers to create extraordinary gaming experiences.</p>
                 <div class="stats">
                     <div class="stat-item">
-                        <span class="stat-number">15+</span>
-                        <span class="stat-label">Team Members</span>
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Członków zespołu</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">2</span>
@@ -86,93 +80,192 @@
                 </div>
             </div>
             <div class="team-image">
-                <img src="team.jpg" alt="Our Team">
+                <img src="assets/team.png" alt="Our Team">
             </div>
         </div>
-    </section>
+        <section class="about">
+            <div class="honorary-donors">
+                <h3>Honorary Donors</h3>
+                <ul>
+                    <li>
+                        <img src="assets/smart.webp" alt="Smart Profile">
+                        <div class="member-info">
+                            <span class="member-name">Smart</span>
+                            <p class="member-description">Siemano jestem Smart,
+                                lubię historię, gry i ludzi.
+                                Od dłuższego czasu prowadze kanał na youtubie i często coś rysuję.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/Nowarchiapfp.png" alt="Emma Johnson profile">
+                        <div class="member-info">
+                            <span class="member-name">Nowarhia</span>
+                            <p class="member-description">Witam jestem Nowarhia albo Szymon,
+                                lubię geografię i historię, prowadzę swój kanał na YouTube,
+                                 i chciałbym umieć rysować i programować ale nie umiem :P</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/jestemkresku.png" alt="Jestem Kresku profile">
+                        <div class="member-info">
+                            <span class="member-name">Kresku</span>
+                            <p class="member-description">Jestem Kresku. Przez ostatni rok prowadzę kanał na YouTube oraz interesuję się historią,
+                                grami i jedzeniem. Uwielbiam naleśniki.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/Worf16pfp.webp" alt="Worf16 Profile">
+                        <div class="member-info">
+                            <span class="member-name">Worf16</span>
+                            <p class="member-description">Cześć jestem Wolf. Interesuję się grami, muzyką i naturą.
+                                W wolnym czasie  zajmuje się rozwijaniem swoich zainteresowany oraz zajmuję się ogrodnictwem.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="testers">
+                <h3>Testerzy</h3>
+                <ul>
+                    <li>
+                        <img src="assets/.jpg" alt=" profile">
+                        <div class="member-info">
+                            <span class="member-name"></span>
+                            <p class="member-description"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/.jpg" alt=" profile">
+                        <div class="member-info">
+                            <span class="member-name"></span>
+                            <p class="member-description"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/.jpg" alt=" profile">
+                        <div class="member-info">
+                            <span class="member-name"></span>
+                            <p class="member-description"></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="administration">
+                <h3>Członkowie AGames Studio</h3>
+                <ul>
+                    <li>
+                        <img src="assets/DevArcik123pfp.webp" alt="DevArcik123 profile">
+                        <div class="member-info">
+                            <span class="member-name">DevArcik123<img src="assets/verify.gif" alt="veryfied" style="width: 16px; height: 16px; vertical-align: middle;"></span>
+
+                            <h3>Właściciel AGames Studio</h3>
+                            <p class="member-description">Młody artysta szkolący się na grafika komputerowego, który wykonuje za niewielką opłatą dobrej jakości grafiki, m.in. loga, banery, plakaty, okładki książek, wizytówki itd.
+
+                                Hobbystycznie robię też animacje, więc wykonam animowane logo. W wolnej chwili trenuję lektorski głos do np. filmów itp. Jestem także kreatywnym pisarzem i dobrze radzę sobie z pisaniem tekstów tak, aby były wystarczająco długie i przyjemne w czytaniu.
+                                
+                                Pracuję w wielu programach, w tych płatnych, jak i w tych darmowych. Najczęściej sięgam po Adobe Photoshop, Animate, Illustrator oraz ostatnio zacząłem naukę w programie InDesign
+                                
+                                Aktualnie tworzę własną grę pt. "The Colony", która polega na strategicznym zarządzaniu swoją kolonią w czasach, gdy wielkie imperia kolonialne zaczynały swoją przygodę z podbojem nieznanych ziem.
+                                
+                                Każdego traktuję indywidualnie, więc na pewno się ze mną dogadasz!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/Drifftpfp.webp" alt="drifft profile">
+                        <div class="member-info">
+                            <span class="member-name">DRIFTT</span>
+                            <p class="member-description">Jestem DRIFTT, w Agames pracuje jako kompozytor muzyki,
+                                 posiadam własne studio gamedev'owe "Rosefield Studios"</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assets/M4t3k_33.gif" alt="Robert Martin profile">
+                        <div class="member-info">
+                            <span class="member-name">m4t3k_33<img src="assets/wd.png" alt="veryfied" style="width: 24px; height: 24px; vertical-align: middle;"></span>
+                            <p class="member-description">Jako webdeveloper w studiu gier, jestem odpowiedzialny za tworzenie stron internetowych,
+                                narzędzi webowych i platform społecznościowych, które promują gry i budują wizerunek studia. 
+                                Współpracuję z działami marketingu, PR i programistami, dbając o atrakcyjny design,
+                                łatwą nawigację i optymalizację stron. Moim zadaniem jest stworzenie platformy, 
+                                która przyciągnie graczy i pozwoli im poznać świat gier tworzonych przez studio. 
+                                Wykonuje strony internetowe po uzgodnieniu wynagrodzenia na PV. (Link w stopce strony😉)
+                                W wolnym czasie poświęcam się swojej pasji jaką jest fotografia 😊. W przyszłości chciałbym założyć firmę która zajmowała by się TechSupportem.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+         
     <section id="contact" class="section">
-        <h2>Contact Us</h2>
+        <h2>Skontaktuj się z nami!</h2>
         <div class="contact-container">
             <div class="contact-info">
-                <h3>Get in Touch</h3>
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>123 Game Street, Digital City</p>
-                </div>
+                <h3>Kontakt</h3>
                 <div class="info-item">
                     <i class="fas fa-envelope"></i>
-                    <p>contact@gamestudio.com</p>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-phone"></i>
-                    <p>+1 234 567 890</p>
+                    <p>xxx@xxx.com</p>
                 </div>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/agames_.official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://discord.gg/KTYgDwjQFx"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.tiktok.com/@ateam.official1408?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
             <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Twoje imię i nazwisko" required>
+                <input type="email" placeholder="twój email" required>
                 <select>
-                    <option value="">Select Topic</option>
-                    <option value="business">Business Inquiry</option>
-                    <option value="support">Technical Support</option>
-                    <option value="careers">Careers</option>
+                    <option value="">Temat</option>
+                    <option value="business">Współpraca</option>
+                    <option value="support">Support dotyczący gier</option>
+                    <option value="careers">Chęć dołączenia do AGames studio</option>
+                    <option value="careers">Problem z funkcjonalnością strony</option>
                 </select>
                 <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="submit-btn">Send Message</button>
+                <button type="submit" class="submit-btn">Wyślij wiadomość</button>
             </form>
         </div>
     </section>
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <div class="footer-logo">GameStudio</div>
-                <p>Creating unforgettable gaming experiences since 2020</p>
+                <div class="footer-logo">AGames Studio</div>
+                <p>Tworzymy gry nieustajnie od 2020r</p>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/agames_.official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://discord.gg/KTYgDwjQFx"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.tiktok.com/@ateam.official1408?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
     
             <div class="footer-section">
-                <h4>Quick Links</h4>
+                <h4>Szybkie linki</h4>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#games">Games</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home">Strona główna</a></li>
+                    <li><a href="#games">Gry</a></li>
+                    <li><a href="#about">O nas</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </div>
     
             <div class="footer-section">
-                <h4>Games</h4>
+                <h4>Gry</h4>
                 <ul>
-                    <li><a href="#games">Cyber Adventure</a></li>
-                    <li><a href="#games">Space Warriors</a></li>
-                    <li><a href="#games">Dark Quest</a></li>
-                    <li><a href="#games">View All Games</a></li>
+                    <li><a href="#games">The Colony</a></li>
+                    <li><a href="#games">RPSD</a></li>
                 </ul>
             </div>
     
             <div class="footer-section">
-                <h4>Contact Info</h4>
+                <h4>kontakt</h4>
                 <ul class="contact-info">
-                    <li><i class="fas fa-map-marker-alt"></i> 123 Game Street, Digital City</li>
-                    <li><i class="fas fa-phone"></i> +1 234 567 890</li>
-                    <li><i class="fas fa-envelope"></i> contact@gamestudio.com</li>
+                    <li><i class="fas fa-phone"></i>xxx xxx xxx</li>
+                    <li><i class="fas fa-envelope"></i> xxx@xxx.com</li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 GameStudio. All rights reserved.         Website design and implementation by <a href="https://discord.gg/YtTmXN7RHb">Mateusz Dymowski discord: m4t3k33</a></p>
+            <p>&copy; 2024 AGames Studio. All rights reserved.         Website design and implementation by <a href="https://discord.gg/YtTmXN7RHb">Mateusz Dymowski discord: m4t3k33</a></p>
         </div>
     </footer>    
 </body>

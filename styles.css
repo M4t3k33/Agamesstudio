@@ -26,7 +26,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    backdrop-filter: blur(10px);
+    backdrop-filter: transparent(15px);
     z-index: 1000;
     animation: slideDown 0.8s ease;
 }
@@ -415,6 +415,7 @@ footer {
     background: var(--navy);
     padding: 4rem 5% 0;
     margin-top: 4rem;
+    
 }
 
 .footer-content {
@@ -422,10 +423,12 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 3rem;
     margin-bottom: 3rem;
+    
 }
 
 .footer-section {
     animation: fadeIn 0.8s ease-out;
+    
 }
 
 .footer-logo {
@@ -443,6 +446,7 @@ footer {
 
 .footer-section ul {
     list-style: none;
+    
 }
 
 .footer-section ul li {
@@ -491,7 +495,8 @@ footer {
 .footer-bottom {
     text-align: center;
     padding: 1.5rem 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid #64ffdb5f ;
+    
 }
 
 @media (max-width: 768px) {
@@ -630,4 +635,174 @@ footer {
 img {
     max-width: 100%;
     height: auto;
+}
+img[src="assets/team.png"] {
+    max-width: 256px;
+    max-height: 256px;
+}
+.about {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about div {
+    background: rgba(28, 37, 53, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    margin: 10px;
+}
+
+.about h3 {
+    color: #6f6c6c;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.about ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+  .about {
+      padding: 4rem 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+  }
+
+  .honorary-donors, .testers, .administration {
+      flex: 1;
+      min-width: 300px;
+  }
+
+  .about ul {
+      padding: 0;
+      list-style: none;
+  }
+
+  .about ul li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      margin-bottom: 1rem;
+  }
+
+  .about ul li:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.1);
+  }
+
+  .about ul li img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      object-fit: cover;
+  }
+
+  .member-info {
+      width: 100%;
+  }
+
+  .member-name {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 1rem 0;
+      color: #fff;
+  }
+
+  .member-description {
+      color: #ccc;
+      font-size: 0.95rem;
+      line-height: 1.6;
+  }
+
+  @media (max-width: 1024px) {
+      .about {
+          flex-direction: column;
+      }
+    
+      .honorary-donors, .testers, .administration {
+          width: 100%;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .about div {
+          width: 90%;
+          margin: 10px 0;
+      }
+  }
+
+  @media (max-width: 480px) {
+      .about div {
+          width: 95%;
+          padding: 15px;
+      }
+
+      .about li {
+          padding: 8px;
+      }
+
+      .about img {
+          width: 40px;
+          height: 40px;
+      }
+
+      .about span {
+          font-size: 14px;
+      }
+  }
+  #cookie-notice {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(28, 37, 53, 0.9);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+#cookie-notice button {
+    background: #21323e;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+#cookie-notice button:hover {
+    background: rgba(100, 255, 218, 0.3);
+}
+
+#cookie-notice a {
+    color: rgba(33, 200, 161, 0.73);
+    text-decoration: none;
+}
+
+#cookie-notice a:hover {
+    text-decoration: underline;
 }

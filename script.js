@@ -46,3 +46,15 @@ document.querySelectorAll('.mobile-nav a').forEach(link => {
         mobileNav.classList.remove('active');
     });
 });
+function acceptCookies() {
+    document.getElementById('cookie-notice').style.display = 'none';
+    localStorage.setItem('cookiesAccepted', 'true');
+}
+
+window.onload = function() {
+    if (!localStorage.getItem('cookiesAccepted')) {
+        document.getElementById('cookie-notice').style.display = 'flex';
+    } else {
+        document.getElementById('cookie-notice').style.display = 'none';
+    }
+}
